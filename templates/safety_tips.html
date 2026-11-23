@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Safety Tips</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Job Safety Tips</h1>
+
+    <h2>Protect Yourself from Fake Jobs</h2>
+
+     <div class="result safety-card">
+        <h3>1. Never Pay Registration Fees</h3>
+        <p>Genuine employers generally do not ask applicants to pay money to get a job.</p>
+
+        <h3>2. Verify the Company</h3>
+        <p>Check the company's official website and contact details.</p>
+
+        <h3>3. Be Careful with Advance Payments</h3>
+        <p>Avoid sending money for security deposits or job confirmation.</p>
+
+        <h3>4. Check Email Addresses</h3>
+        <p>Compare the sender's email address with the company's official domain.</p>
+
+        <h3>5. Check Job Advertisements</h3>
+        <p>Be careful with unrealistic salaries and guaranteed-job promises.</p>
+
+        <h3>6. Avoid Suspicious Links</h3>
+        <p>Do not open unknown links or share personal information on unverified websites.</p>
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+
+    <p><a href="/history">View Analysis History</a></p>
+
+</div>
+
+ 
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/history">History</a>
+    <a href="/safety-tips">Safety Tips</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/faq">FAQ</a>
+</nav>
+<div class="brand">
+    <img src="{{ url_for('static', filename='images/jobshield.png') }}"
+         alt="JobShield Logo">
+</div>
+</body>
+
+</html>

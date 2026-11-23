@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Security Dashboard</h1>
+
+    <p style="text-align:center;">
+        Fake Job Advertisement Detector Statistics
+    </p>
+
+    <div class="dashboard-grid">
+
+        <h2>Total Advertisements Analyzed</h2>
+        <h1>{{ total }}</h1>
+
+        <h2>High Risk Advertisements</h2>
+        <h1 class="risk-high">{{ high }}</h1>
+
+        <h2>Medium Risk Advertisements</h2>
+        <h1 class="risk-medium">{{ medium }}</h1>
+
+        <h2>Low Risk Advertisements</h2>
+        <h1 class="risk-low">{{ low }}</h1>
+
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+
+    <p><a href="/history">View Analysis History</a></p>
+
+</div>
+
+</body>
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/history">History</a>
+    <a href="/safety-tips">Safety Tips</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/faq">FAQ</a>
+</nav>
+<div class="brand">
+    <img src="{{ url_for('static', filename='images/jobshield.png') }}"
+         alt="JobShield Logo">
+</div>
+
+</html>

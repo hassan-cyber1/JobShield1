@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160">
+  <rect width="500" height="160" rx="18" fill="#07152e"/>
+
+  <path d="M75 20 L120 38 V75
+           Q120 110 75 135
+           Q30 110 30 75 V38 Z"
+        fill="#155eef" stroke="#38d9ff" stroke-width="5"/>
+
+  <path d="M52 77 L70 94 L101 58"
+        fill="none" stroke="white"
+        stroke-width="9" stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <text x="145" y="85" font-size="48"
+        font-weight="bold" font-family="Arial"
+        fill="white">Job</text>
+
+  <text x="245" y="85" font-size="48"
+        font-weight="bold" font-family="Arial"
+        fill="#22c7f5">Shield</text>
+
+  <text x="148" y="115" font-size="15"
+        font-family="Arial" fill="#b9d9f5">
+    DETECT FAKE JOBS. STAY SAFE.
+  </text>
+</svg>

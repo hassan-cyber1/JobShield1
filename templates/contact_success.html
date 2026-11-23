@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Submitted</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Message Submitted Successfully!</h1>
+
+    <div class="result">
+        <h2>Thank You!</h2>
+
+        <p>Your message has been saved successfully.</p>
+
+        <p>Thank you for contacting Fake Job Advertisement Detector.</p>
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+
+</div>
+
+</body>
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/history">History</a>
+    <a href="/safety-tips">Safety Tips</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/faq">FAQ</a>
+</nav>
+<div class="brand">
+    <img src="{{ url_for('static', filename='images/jobshield.png') }}"
+         alt="JobShield Logo">
+</div>
+
+</html>

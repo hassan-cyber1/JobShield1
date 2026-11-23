@@ -1,0 +1,69 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Advertisement Analysis Results</h1>
+
+    <div class="result">
+
+        <h2>Job Details</h2>
+
+        <p><b>Job Title:</b> {{ job_title }}</p>
+        <p><b>Company:</b> {{ company_name }}</p>
+
+        <h2>Security Assessment</h2>
+
+        <h2 class="{% if result == 'High Risk' %}risk-high{% elif result == 'Medium Risk' %}risk-medium{% else %}risk-low{% endif %}">
+            {{ result }}
+        </h2>
+
+        <h2>Risk Score: {{ score }}/100</h2>
+
+        <h3>Detected Warnings:</h3>
+
+        {% if warnings %}
+            <ul>
+            {% for warning in warnings %}
+                <li class="warning">{{ warning }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No listed warning phrases detected.</p>
+        {% endif %}
+
+    </div>
+
+    <p>
+        This result is based on automated security checks.
+        It does not confirm whether a job is genuine or fake.
+    </p>
+
+    <p><a href="/">Analyze Another Advertisement</a></p>
+
+    <p><a href="/history">View Analysis History</a></p>
+
+</div>
+
+</body>
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/history">History</a>
+    <a href="/safety-tips">Safety Tips</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/faq">FAQ</a>
+</nav>
+
+</html>
+
+

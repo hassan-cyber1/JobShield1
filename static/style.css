@@ -1,0 +1,385 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #123b68;
+}
+
+h2 {
+    color: #1e40af;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.result {
+    padding: 15px;
+    border-radius: 8px;
+    background: #eff6ff;
+    margin-top: 20px;
+}
+
+.warning {
+    color: #b45309;
+}
+
+.risk-high {
+    color: #dc2626;
+}
+
+.risk-medium {
+    color: #d97706;
+}
+
+.risk-low {
+    color: #16a34a;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th {
+    background: #1d4ed8;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+}
+
+tr:nth-child(even) {
+    background: #eff6ff;
+}
+
+.navbar {
+    background: #123b68;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #93c5fd;
+}
+.brand {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.brand img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: inline-block;
+}
+/* JobShield Professional Design */
+
+body {
+    background: #f0f5ff;
+    color: #10213a;
+    font-family: Arial, sans-serif;
+}
+
+.brand {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.brand img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+button, input[type="submit"] {
+    background: #155eef;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #0845bd;
+    transform: translateY(-2px);
+}
+
+input, textarea, select {
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #38bdf8;
+    border-color: #155eef;
+}
+
+.card, .container, .result-box {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(20, 50, 90, 0.08);
+}
+/* JobShield Analysis Form Card */
+
+.analysis-form {
+    background: #ffffff;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(21, 94, 239, 0.10);
+}
+
+.analysis-form label {
+    display: block;
+    font-weight: bold;
+    margin: 18px 0 8px;
+    color: #10213a;
+}
+
+.analysis-form input,
+.analysis-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font-size: 16px;
+}
+
+.analysis-form textarea {
+    resize: vertical;
+}
+
+.analysis-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 9px;
+}
+/* JobShield Navigation Styling */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #155eef;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #155eef;
+    color: white;
+    transform: translateY(-3px);
+}
+/* JobShield Main Heading */
+
+h1 {
+    color: #155eef;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+/* JobShield Dashboard Cards */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.dashboard-grid > div {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 6px 18px rgba(21, 94, 239, 0.10);
+    transition: 0.3s;
+}
+
+.dashboard-grid > div:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-grid h2 {
+    color: #10213a;
+    font-size: 19px;
+}
+
+.dashboard-grid h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.risk-high {
+    color: #dc2626;
+}
+
+.risk-medium {
+    color: #d97706;
+}
+
+.risk-low {
+    color: #16a34a;
+}
+
+@media (max-width: 600px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* JobShield History Table */
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(21, 94, 239, 0.10);
+}
+
+.history-table th {
+    background: #155eef;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.history-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.history-table tr:hover {
+    background: #eff6ff;
+}
+/* JobShield Safety Tips Design */
+
+.safety-card {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 25px auto;
+    box-shadow: 0 8px 25px rgba(20, 60, 120, 0.08);
+}
+
+.safety-card h3 {
+    color: #155eef;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.safety-card p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}

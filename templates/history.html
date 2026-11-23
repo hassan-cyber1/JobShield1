@@ -1,0 +1,70 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Advertisement Analysis History</h1>
+
+    <p>Previously analyzed job advertisements.</p>
+
+    {% if records %}
+
+    <div class="table-wrapper">
+     <table class="history-table">
+        <tr>
+            <th>ID</th>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Score</th>
+            <th>Risk Level</th>
+            <th>Warnings</th>
+            <th>Date</th>
+        </tr>
+
+        {% for record in records %}
+        <tr>
+            <td>{{ record["id"] }}</td>
+            <td>{{ record["job_title"] }}</td>
+            <td>{{ record["company_name"] }}</td>
+            <td>{{ record["risk_score"] }}/100</td>
+            <td>{{ record["risk_level"] }}</td>
+            <td>{{ record["detected_warnings"] }}</td>
+            <td>{{ record["created_at"] }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    </div>
+
+    {% else %}
+        <p>No advertisement records found.</p>
+    {% endif %}
+
+    <p><a href="/">Back to Home</a></p>
+
+</div>
+
+</body>
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/history">History</a>
+    <a href="/safety-tips">Safety Tips</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/faq">FAQ</a>
+</nav>
+<div class="brand">
+    <img src="{{ url_for('static', filename='images/jobshield.png') }}"
+         alt="JobShield Logo">
+</div>
+
+</html>

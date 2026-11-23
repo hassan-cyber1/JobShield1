@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="result">
+
+        <h2>1. What is Fake Job Advertisement Detector?</h2>
+        <p>It is a cybersecurity application that checks job advertisements for suspicious indicators.</p>
+
+        <h2>2. How does this application work?</h2>
+        <p>It analyzes advertisement text, detects selected warning signs and calculates a risk score.</p>
+
+        <h2>3. What is a Risk Score?</h2>
+        <p>A score from 0 to 100 based on the warning indicators detected by the application.</p>
+
+        <h2>4. What does High Risk mean?</h2>
+        <p>It means multiple or high-scoring warning indicators were detected. Further verification is recommended.</p>
+
+        <h2>5. Does Low Risk mean the job is genuine?</h2>
+        <p>No. A low score does not guarantee that a job is genuine.</p>
+
+        <h2>6. Does the application save analysis history?</h2>
+        <p>Yes. Advertisement analysis results are stored in an SQLite database.</p>
+
+        <h2>7. Is this application free?</h2>
+        <p>Yes. This educational project is free to use locally.</p>
+
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+
+</div>
+
+</body>
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/history">History</a>
+    <a href="/safety-tips">Safety Tips</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/faq">FAQ</a>
+</nav>
+<div class="brand">
+    <img src="{{ url_for('static', filename='images/jobshield.png') }}"
+         alt="JobShield Logo">
+</div>
+
+</html>
